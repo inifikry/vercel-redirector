@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/.*",
+      "dest": "/api/redirect",
+      "headers": {
+        "Location": "$REDIRECT_URL"
+      }
+    }
+  ]
+}
